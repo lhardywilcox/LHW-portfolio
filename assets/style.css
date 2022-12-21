@@ -1,0 +1,50 @@
+:root{
+    --dark: rgb(54, 82, 108);
+    --light: rgb(212, 204, 165);
+}
+
+body{
+    background-color: var(--dark);
+    color: var(--light);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menu{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+ul li{
+    list-style-type: none;
+    line-height: 5;
+}
+
+.my-photo{
+    display: block;
+    height: 600px;
+    width: 1000px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border-radius: 15px; 
+    z-index: 1; 
+}
+
+header{
+    display: block;
+    font-size: 50px;
+    font-style: italic;
+    border: 3px black solid;
+    position: relative;
+    top: 10px;
+    text-align: center;
+    z-index: 2;
+}
+
+.bio{
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    border: 2px black solid;
+    font-size: 20px;
+}
