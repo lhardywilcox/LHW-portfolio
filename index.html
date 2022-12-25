@@ -11,14 +11,14 @@
 <body>
     <nav class="menu">
         <ul>
-            <li>My Projects</li>
-            <li>My Toolbox</li>
-            <li>Resume</li>
-            <li>Contact Info</li>
+            <a href="#projects">My Projects</a>
+            <a href="#toolbox">My Toolbox</a>
+            <a href="#resume">My Resume</a>
+            <a href="#contactinfo">Contact Information</a>
         </ul>
     </nav>
     <div>
-        <img class="my-photo" src="./assets/images/image-1.png" alt="A photo of Laura Hardy-Wilcox.">
+        <img class="my-photo" src="./assets/images/Laura.jpg" alt="A photo of Laura Hardy-Wilcox.">
     </div>
 
     <header>
@@ -26,51 +26,56 @@
     </header>
 
     <article class="bio">
-        <p>This will be a one or two paragraph long introductory bio.  It will give a little background information about me.  I haven't written the entire piece yet, but it will be done soon.</p>
+        <p>This will be a one or two paragraph long introductory bio.  It will give a little background information about me.  I haven't written the entire piece yet, but it will be done soon. I'm going to make it long enough that maybe I can test out the scroll thing that I'm trying to put in when it overflows the box.  I'm almost there.  It will be nice to have this paragraph completely written, and then I can get the real things posted.  It's not hard to do, but everything feels like it takes a long time for me to put together. And it looks like the scroll bar is there.  Yay, me!</p>
     </article>
 
-    <h2>My Projects</h2>
+    <h2 id="projects">My Projects</h2>
 
     <section class="myprojects">
         <div class="card">
             <h3>Title of Project</h3>
+            <img src="./assets/images/image-2.png" alt="Project 1">
             <p>Link to project website</p>
         </div>
-    </section>
-
-    <section class="myprojects">
+        
         <div class="card">
             <h3>Title of Project</h3>
+            <img src="./assets/images/image-2.png" alt="Project 2">
             <p>Link to project website</p>
         </div>
-    </section>
 
-    <section class="myprojects">
         <div class="card">
             <h3>Title of Project</h3>
+            <img src="./assets/images/image-2.png" alt="Project 3">
             <p>Link to project website</p>
         </div>
     </section>
     <br>
     <section class="mytoolbox">
-        <h2>My Toolbox</h2>
+        <h2 id="toolbox">My Toolbox</h2>
         <br>
-        <img src="./assets/images/image-2.png" alt="A dim photo of a toolbox, with labelled icons of programming tools layered over it.">
-        <p>This section will have an opaque photo of my toolbox as a background, with labelled icons for all the code items I learn in bootcamp.</p>
+        <img src="./assets/images/Toolbox.jpg" alt="A dim photo of a toolbox, with labelled icons of programming tools layered over it.">
+        <table>
+            <tr>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>Javascript</td>
+            </tr>
+        </table>
     </section>
     <br>
     <section class="myresume">
-        <h2>My Resume</h2>
+        <h2 id="resume">My Resume</h2>
         <br>
         <p>This section will contain my resume in a fixed box size, with the overflow enabled to make the text scrollable.  It will also include a link to a printable version of my resume on google docs.</p>
     </section>
     <br>
     <section class="contact">
-    <h2>Contact information</h2>
+    <h2 id="contactinfo">Contact information</h2>
     <ul>
-        <li>Email:</li>
-        <li>GitHub:</li>
-        <li>Linked In:</li>
+        <a href="mailto: motacycaryda@mac.com">Send me an email!</a>
+        <a href="https://github.com/lhardywilcox">Visit my Github profile!</a>
+        <a href="www.linkedin.com/in/laura-hardy-wilcox-b44740137">Visit my linkedin profile!</a>
     </ul>
     </section>
 
