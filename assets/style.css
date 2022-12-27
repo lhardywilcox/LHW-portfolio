@@ -1,3 +1,4 @@
+/* Sets variables to allow for color palette changes as desired.*/
 :root{
     --dark: #142cb4;
     --light: #f0eee0;
@@ -18,13 +19,13 @@ body{
     font-weight: 700;
     z-index: 5;
 }
-
+/* Changed a elements in nav section to display in block, instead of inline. */
 ul a{
     display: block;
     line-height: 3;
     color: var(--light);
 }
-
+/* Positioned my photo to top right of viewport, and behind text. */
 .my-photo{
     display: block;
     height: 600px;
@@ -53,7 +54,7 @@ h2{
     margin-left: 20px;
     padding: 0px, 50px;
 }
-
+/*Created area for short bio that has ability to scroll if it's longer than the box size, limits amount of space required.  */
 .bio{
     height: 200px;
     max-width: 100%;
@@ -66,7 +67,7 @@ h2{
     margin-bottom: 100px;
     overflow: scroll;
 }
-
+/* Creates the project tiles and spaces them. */
 .myprojects{
     display: flex;
     flex-direction: row;
@@ -74,7 +75,7 @@ h2{
     text-align: center;
     padding: 50px;
 }
-
+/* Makes the project tiles increase in size when hovered over.  Was able to combine all three together to make the code easier to follow. */
 #project1, #project2, #project3{
     transition: transform(.2s);
 }
@@ -86,11 +87,11 @@ h2{
 .card img{
     border-radius: 15px;
 }
-
+/* Changed the color of the links to same as text color. */
 .card a{
     color: var(--light);
 }
-
+/*Displayed toolbox photo size, position, and made it opaque, so I could position text over it. */
 .mytoolbox img{
     display: flex;
     flex-direction: row;
@@ -104,22 +105,20 @@ h2{
 
 .mytoolbox ul{
     position: relative;
-    /* border: 2px black solid; */
+    /* border: 2px black solid; Used border to help with positioning. */
     top: -500px;
-    /* bottom: 500px; */
     padding-left: 5%;
     font-size: 36px;
     line-height: 3;
 }
-
+/* Used to help list items shrink more responsively. */
 .mytoolbox li{
     display: flex;
-    flex-direction: row;
     flex: 1, 2, 100%;
     justify-content: center;
     list-style-type: none;
 }
-
+/* Created space to add a resume in a limited size box that will scroll if overfilled.  Do not have an updated resume to add yet, but will add when it is approved.  Also plan to include link to printable resume on Google Docs. */
 .myresume p{
     height: 200px;
     max-width: 100%;
@@ -138,7 +137,7 @@ footer{
     text-align: center;
     margin-top: 50px;
 }
-
+/* Used to change screen display when viewport is halved in size. */
 @media screen and (max-width: 768px){
     .mytoolbox ul{
         display: flex;
