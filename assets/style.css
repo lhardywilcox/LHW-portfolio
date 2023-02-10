@@ -1,16 +1,16 @@
 /* Sets variables to allow for color palette changes as desired.*/
-:root{
+:root {
     --dark: #142cb4;
     --light: #f0eee0;
 }
 
-body{
+body {
     background-color: var(--dark);
     color: var(--light);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.menu{
+.menu {
     display: block;
     position: absolute;
     top: 0px;
@@ -19,25 +19,27 @@ body{
     font-weight: 700;
     z-index: 5;
 }
+
 /* Changed a elements in nav section to display in block, instead of inline. */
-ul a{
+ul a {
     display: block;
     line-height: 3;
     color: var(--light);
 }
+
 /* Positioned my photo to top right of viewport, and behind text. */
-.my-photo{
+.my-photo {
     display: block;
     height: 600px;
     width: 1000px;
     position: absolute;
     right: 0px;
     top: 0px;
-    border-radius: 5px; 
-    z-index: 1; 
+    border-radius: 5px;
+    z-index: 1;
 }
 
-header{
+header {
     display: block;
     font-size: 50px;
     font-style: italic;
@@ -49,13 +51,14 @@ header{
     z-index: 2;
 }
 
-h2{
+h2 {
     font-size: 32px;
     margin-left: 20px;
     padding: 0px, 50px;
 }
+
 /*Created area for short bio that has ability to scroll if it's longer than the box size, limits amount of space required.  */
-.bio{
+.bio {
     height: 200px;
     max-width: 100%;
     /*border: 2px black solid; Used border to help with positioning*/
@@ -67,43 +70,56 @@ h2{
     margin-bottom: 100px;
     overflow: scroll;
 }
+
 /* Creates the project tiles and spaces them. */
-.myprojects{
+.myprojects {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
     padding: 50px;
+
 }
+
+.card img {
+    height: 200px;
+    width: 200px;
+}
+
 /* Makes the project tiles increase in size when hovered over.  Was able to combine all three together to make the code easier to follow. */
-#project1, #project2, #project3{
+#project1,
+#project2,
+#project3 {
     transition: transform(.2s);
 }
 
-#project1:hover, #project2:hover, #project3:hover{
+#project1:hover,
+#project2:hover,
+#project3:hover {
     transform: scale(1.2);
 }
 
-.card img{
+.card img {
     border-radius: 15px;
 }
+
 /* Changed the color of the links to same as text color. */
-.card a{
+.card a {
     color: var(--light);
 }
+
 /*Displayed toolbox photo size, position, and made it opaque, so I could position text over it. */
-.mytoolbox img{
+.mytoolbox img {
     display: flex;
     flex-direction: row;
     margin: auto;
-    padding: 30%
-    border-radius: 15px;
+    padding: 30% border-radius: 15px;
     height: 600px;
     width: 800px;
     opacity: .3;
 }
 
-.mytoolbox ul{
+.mytoolbox ul {
     position: relative;
     /* border: 2px black solid; Used border to help with positioning. */
     top: -500px;
@@ -111,18 +127,20 @@ h2{
     font-size: 36px;
     line-height: 3;
 }
+
 /* Used to help list items shrink more responsively. */
-.mytoolbox li{
+.mytoolbox li {
     display: flex;
     flex: 1, 2, 100%;
     justify-content: center;
     list-style-type: none;
 }
+
 /* Created space to add a resume in a limited size box that will scroll if overfilled.  Do not have an updated resume to add yet, but will add when it is approved.  Also plan to include link to printable resume on Google Docs. */
-.myresume p{
+.myresume p {
     height: 200px;
     max-width: 100%;
-   /*  border: 2px black solid; Used border to help with positioning. */
+    /*  border: 2px black solid; Used border to help with positioning. */
     font-size: 32px;
     text-align: center;
     position: relative;
@@ -131,23 +149,25 @@ h2{
     overflow: scroll;
 }
 
-footer{
+footer {
     font-size: 36px;
     font-style: italic;
     text-align: center;
     margin-top: 50px;
 }
+
 /* Used to change screen display when viewport is halved in size. */
-@media screen and (max-width: 768px){
-    .mytoolbox ul{
+@media screen and (max-width: 768px) {
+    .mytoolbox ul {
         display: flex;
         flex-direction: column;
         justify-content: left;
-    }    
+    }
 }
+
 /* Used to change project tiles to column in smaller viewports. */
-@media screen and (max-width: 576px){
-    .myprojects{
+@media screen and (max-width: 576px) {
+    .myprojects {
         flex-direction: column;
     }
 }
